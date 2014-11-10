@@ -12,11 +12,11 @@
 		A8FC2DCF1A1038EE00A204DB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FC2DCE1A1038EE00A204DB /* SystemConfiguration.framework */; };
 		A8FC2DD41A1038EE00A204DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC2DD31A1038EE00A204DB /* AppDelegate.swift */; };
 		A8FC2DD71A1038EE00A204DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FC2DD51A1038EE00A204DB /* Main.storyboard */; };
-		A8FC2DDA1A1038EE00A204DB /* ___VARIABLE_classPrefix:identifier___ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FC2DD91A1038EE00A204DB /* ___VARIABLE_classPrefix:identifier___ViewController.m */; };
 		A8FC2DDC1A1038EE00A204DB /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FC2DDB1A1038EE00A204DB /* Firebase.framework */; };
 		A8FC2DDE1A1038EE00A204DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FC2DDD1A1038EE00A204DB /* Images.xcassets */; };
 		A8FC2DE11A1038EE00A204DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FC2DDF1A1038EE00A204DB /* LaunchScreen.xib */; };
 		A8FC2DED1A1038EE00A204DB /* FirstFireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC2DEC1A1038EE00A204DB /* FirstFireTests.swift */; };
+		A8FC2DF91A1039FB00A204DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FC2DF81A1039FB00A204DB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,8 @@
 		A8FC2DE61A1038EE00A204DB /* FirstFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FC2DEB1A1038EE00A204DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FC2DEC1A1038EE00A204DB /* FirstFireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFireTests.swift; sourceTree = "<group>"; };
+		A8FC2DF81A1039FB00A204DB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8FC2DFD1A10714400A204DB /* FirstFire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstFire-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FC2DDC1A1038EE00A204DB /* Firebase.framework in Frameworks */,
 				A8FC2DCD1A1038EE00A204DB /* Security.framework in Frameworks */,
 				A8FC2DCF1A1038EE00A204DB /* SystemConfiguration.framework in Frameworks */,
 				A8FC2DCB1A1038EE00A204DB /* CFNetwork.framework in Frameworks */,
-				A8FC2DDC1A1038EE00A204DB /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +78,7 @@
 				A8FC2DE91A1038EE00A204DB /* FirstFireTests */,
 				A8FC2DC91A1038EE00A204DB /* Frameworks */,
 				A8FC2DC81A1038EE00A204DB /* Products */,
+				A8FC2DFD1A10714400A204DB /* FirstFire-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FC2DD31A1038EE00A204DB /* AppDelegate.swift */,
+				A8FC2DF81A1039FB00A204DB /* ViewController.swift */,
 				A8FC2DD51A1038EE00A204DB /* Main.storyboard */,
 				A8FC2DD81A1038EE00A204DB /* ___VARIABLE_classPrefix:identifier___ViewController.h */,
 				A8FC2DD91A1038EE00A204DB /* ___VARIABLE_classPrefix:identifier___ViewController.m */,
@@ -187,6 +191,7 @@
 				TargetAttributes = {
 					A8FC2DC61A1038EE00A204DB = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8LNK9RBV55;
 					};
 					A8FC2DE51A1038EE00A204DB = {
 						CreatedOnToolsVersion = 6.1;
@@ -239,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FC2DD41A1038EE00A204DB /* AppDelegate.swift in Sources */,
-				A8FC2DDA1A1038EE00A204DB /* ___VARIABLE_classPrefix:identifier___ViewController.m in Sources */,
+				A8FC2DF91A1039FB00A204DB /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Shared/Firebase/Frameworks,
@@ -374,6 +380,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirstFire-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -381,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Shared/Firebase/Frameworks,
@@ -393,6 +402,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirstFire-Bridging-Header.h";
 			};
 			name = Release;
 		};

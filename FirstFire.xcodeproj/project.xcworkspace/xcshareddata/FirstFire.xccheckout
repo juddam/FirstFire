@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0423DB4-5D8B-4ED7-BAB8-2FE43C04D13F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FirstFire</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEC7996922AB88DA79B09D25C8E37309623BF948</key>
+		<string>https://github.com/juddam/FirstFire.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FirstFire.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEC7996922AB88DA79B09D25C8E37309623BF948</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/juddam/FirstFire.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEC7996922AB88DA79B09D25C8E37309623BF948</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEC7996922AB88DA79B09D25C8E37309623BF948</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FirstFire</string>
+		</dict>
+	</array>
+</dict>
+</plist>
